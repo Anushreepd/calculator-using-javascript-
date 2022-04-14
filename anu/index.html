@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="cala.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <tr>
+            <td class="heading">
+                SIMPLE CALCULATOR
+            </td>
+        </tr>
+        <td>
+            <input type="text" id="ans" placeholder="0">
+        </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input class = "btn" type="button" value="CE"  id= "clr" onclick="clearscreen()">
+                <input class = "btn" type="button" value="&#247;" id="div" onclick="button('/')">
+                <input class = "btn"  type="button" value="x" id="mul" onclick="button('*')">
+                <input class = "btn"  type="button" value="&#8592;" onclick="backspace()" style="color: red;">
+                <br>
+
+                <input class = "btn"  type="button" value="1" onclick="button('1')">
+                <input class = "btn"  type="button" value="2" onclick="button('2')">
+                <input  class = "btn" type="button" value="3" onclick="button('3')">
+                <input class = "btn"  type="button" value="+" id="add" onclick="button('+')">
+                <br>
+
+                <input  class = "btn" type="button" value="4" onclick="button('4')">
+                <input class = "btn"  type="button" value="5" onclick="button('5')">
+                <input class = "btn" type="button" value="6" onclick="button('6')">
+                <input class = "btn" type="button" value="-"  id="sub" onclick="button('-')">
+                <br>
+
+                <input class = "btn" type="button" value="7" onclick="button('7')">
+                <input class = "btn" type="button" value="8" onclick="button('8')">
+                <input class = "btn" type="button" value="9" onclick="button('9')">
+                <input class = "btn" type="button" value="()" onclick="brackets()">
+                <br>
+
+                <input class = "btn" type="button" value="+/-" onclick="getOperand('+/-')">
+                <input class = "btn" type="button" value="0" onclick="button('0')">
+                <input class = "btn" type="button" value="="  id = "equal" onclick="button1()" style="width: 125px; color: white; background: green;">
+                <br>
+
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
